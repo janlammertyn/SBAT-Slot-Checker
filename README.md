@@ -34,7 +34,9 @@ Inside the script, you **must replace** certain variables with values that match
 	-   Replace with your own Discord webhook URL from the channel where you want notifications.
 	-   Example: `DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/123456/ABCDEF"`
 3. **`REQUEST_BODY_DATE`**
-	-   Replace with the date/time you want the API request to start searching from.
+	- Time you want the API request to start searching from.
+    - Is now set to the date/time of running
+    - Replace with specific date/time if you wish:
 	-   Example: `REQUEST_BODY_DATE = "2025-02-06T00:00"`
 4. **`START_DATE` and `END_DATE`**
 	-   Replace these with the date range you want to filter on _after_ receiving data from the API.
