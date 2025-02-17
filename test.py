@@ -29,9 +29,9 @@ EXAM_CENTERS = {
     10: "Sint-Niklaas",
 }
 
-# Our single request will use this "startDate" in the POST body
+# Our single request will use the current "startDate" in the POST body
 # per center. The API presumably returns all slots after that date.
-REQUEST_BODY_DATE = "2025-02-06T00:00"
+REQUEST_BODY_DATE = datetime.now().strftime("%Y-%m-%dT%H:%M")
 
 # We only want timeslots between these two datetimes (inclusive)
 START_DATE = datetime(2025, 2, 20, 0, 0, 0)
